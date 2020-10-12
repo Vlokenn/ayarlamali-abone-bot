@@ -22,5 +22,5 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "roket-yazı"
+  name: "roket"
 };

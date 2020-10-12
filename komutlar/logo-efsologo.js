@@ -5,12 +5,12 @@ exports.run = (client, message, args) => {
 
 let logoaltyap = args.slice(0).join("+");
 if (!logoaltyap) return message.channel.send("Lütfen Bişey Yaz");
-let link ="https://dynamic.brandcrowd.com/asset/logo/d656041d-bb59-4ed0-91e0-c900862aabb2/logo?v=4&text=" + logoaltyap;
+let link ="https://dynamic.brandcrowd.com/asset/logo/2035bdcf-a9f1-46cb-a98e-19a27e762c22/logo?v=4&text=" + logoaltyap;
 
 const logobotaltyapi = new Discord.MessageEmbed()
-.setTitle(`${botlar} Örümcek Logosu`)
+.setTitle(`${botlar} Efsane Logosu`)
 .setImage(link)
-.setFooter(`${botlar} Örümcek Logosu`)
+.setFooter(`${botlar} Efsane Logosu`)
 return message.channel.send(logobotaltyapi);
 };
 
@@ -22,5 +22,5 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "orumcek"
+  name: "efsane"
 };
