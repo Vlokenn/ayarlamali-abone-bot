@@ -1,3 +1,3 @@
-Bu altyapı lux す#0549'a aittir lux.js ana dosyadır.
+Bu Altyapı Yunus.ExE Ye Aittir Yani Yunus Emre Yeni Adı Coloner
 -------------------------
-Code Master
+TR Code

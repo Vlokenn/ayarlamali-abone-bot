@@ -1,4 +1,3 @@
-// Bu Altyapı Tamamen Shydra Codeye Aittir.
 const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
@@ -17,7 +16,8 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-       "lux ke"
+       "Discord En Gelişmiş Bot",
+    " Efsane Discord Botu By Coloner Yani Yunus Emre"
   ];
 
   setInterval(function() {
