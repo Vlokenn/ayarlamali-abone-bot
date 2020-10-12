@@ -8,18 +8,10 @@ let botadi = ayarlar.botadi
 let yardım = new Discord.MessageEmbed()  //V12 Koddur
 .setAuthor(`${botadi}`)
 .setColor('BLUE')
-.setDescription(`[**__${botadi}__**](https://${botadi}BOT.com)`)
+.setDescription(`[**__${botadi}__**](https://dsdds.com)`)
 .addField(`${botadi} Yardım Menüsü`,`
-**:white_small_square: = \`efsane\` : Efsane Logo Üretir**
-**:white_small_square: = \`ejderha\` : Ejderha Logo Üretir**
-**:white_small_square: = \`flash\` : Flash Logo Üretir**
-**:white_small_square: = \`gamer\` : Gamer Logo Üretir**
-**:white_small_square: = \`graffiti\` : Graffiti Logo Üretir**
-**:white_small_square: = \`köpek\` : Köpek Logo Üretir**
-**:white_small_square: = \`orumcek\` : Orumcek Logo Üretir**
-**:white_small_square: = \`roket\` : Roket Logo Üretir**
-**:white_small_square: = \`s\` : Roket Logo Üretir**
-
+**:white_small_square: = \`logo\` : Genel Logoları Görüntülersiniz**
+**:white_small_square: = \`efso-logo\` : Efsane Logoları Görüntülersiniz**
 `)
 .setFooter(`${message.author.tag} Tarafından İstendi.`, message.author.avatarURL)
 .addField(`${botadi}`,`[Botu Davet Et](link) **|** [Destek Sunucumuz](link)`)
@@ -29,9 +21,9 @@ let yardım = new Discord.MessageEmbed()  //V12 Koddur
 exports.conf = {
   enabled: true,  
   guildOnly: false, 
-  aliases: ['abonesistemi', 'abone-ver'], 
+  aliases: ['help'], 
   permLevel: 0
 };
 exports.help = {
-  name: 'abone-sistemi'
+  name: 'yardım'
 }; 
