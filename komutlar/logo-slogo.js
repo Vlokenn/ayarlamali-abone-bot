@@ -8,9 +8,9 @@ if (!logoaltyap) return message.channel.send("Lütfen Bişey Yaz");
 let link ="https://dynamic.brandcrowd.com/asset/logo/830a970a-0fe8-44c8-b47c-8edd773874ef/logo?v=4&text=" + logoaltyap;
 
 const logobotaltyapi = new Discord.MessageEmbed()
-.setTitle(`${botlar} Köpek Logosu`)
+.setTitle(`${botlar} S Logosu`)
 .setImage(link)
-.setFooter(`${botlar} Köpek Logosu`)
+.setFooter(`${botlar} S Logosu`)
 return message.channel.send(logobotaltyapi);
 };
 
