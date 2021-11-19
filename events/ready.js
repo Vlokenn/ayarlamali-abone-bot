@@ -16,7 +16,8 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-       "Made With Vloken",];
+       "Made With Vloken",
+       "Made With Vloken"];
 
   setInterval(function() {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
