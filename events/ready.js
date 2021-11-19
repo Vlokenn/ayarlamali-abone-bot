@@ -16,9 +16,7 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-       "Discord En Gelişmiş Bot",
-    " Efsane Discord Botu By Coloner Yani Yunus Emre"
-  ];
+       "Made With Vloken",];
 
   setInterval(function() {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
