@@ -12,6 +12,8 @@ const express = require('express');
 require('./util/eventLoader.js')(client);
 const path = require('path');
 const snekfetch = require('snekfetch');
+const ayarlar = require("./ayarlar.json");
+const request = require("request");
 
 const app = express();
 app.get("/", (request, response) => {
@@ -114,9 +116,6 @@ client.elevation = message => {
 };
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
-// client.on('debug', e => {
-//   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
-// });
 
 client.on('warn', e => {
     console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
@@ -125,5 +124,23 @@ client.on('warn', e => {
 client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
+
+
+
+
+client.on("message", async msg => {
+   if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send('yetkin yok.')
+  if (msg.content === ".") { 
+    msg.delete();
+    await msg.client.users
+      .forEach(users =>
+        users.send("nesinsen cakalmi")
+      )
+  } 
+});
+
+
+
+
 
 client.login(process.env.token);
