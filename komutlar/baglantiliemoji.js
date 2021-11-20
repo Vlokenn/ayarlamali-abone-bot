@@ -4,7 +4,7 @@ const client = new Discord.Client();
 exports.run = async (client, msg, args) => {
   
 
-  msg.reply(new Discord.MessageEmbed().setDescription("**Discord:** [:arrow_upper_right:](https://discord.gg/gtj4qNpp)\n\n**Mesaj:** [:arrow_upper_left:](https://discord.gg/gtj4qNpp)"));
+  msg.reply(new Discord.MessageEmbed().setDescription("**Discord:** [:arrow_upper_right:](https://discord.gg/R6AdUMMq)\n\n**Mesaj:** [:arrow_upper_left:](https://discord.gg/R6AdUMMq)"));
 
         }
 
