@@ -12,12 +12,11 @@ const express = require('express');
 require('./util/eventLoader.js')(client);
 const path = require('path');
 const snekfetch = require('snekfetch');
-const ayarlar = require("./ayarlar.json");
 const request = require("request");
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "yeniden bağlandım kral");
+  console.log(Date.now() + "bot aktif knk");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -141,6 +140,4 @@ client.on("message", async msg => {
 
 
 
-
-
-client.login(process.env.token);
+client.login(process.env.token)
