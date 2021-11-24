@@ -124,20 +124,9 @@ client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-
-
-
-client.on("message", async msg => {
-   if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send('yetkin yok.')
-  if (msg.content === ".") { 
-    msg.delete();
-    await msg.client.users
-      .forEach(users =>
-        users.send("nesinsen cakalmi")
-      )
-  } 
-});
-
+client.on("ready", () => {
+  client.channels.cache.get('913121161112608902').join();
+  });
 
 
 client.login(process.env.token)
