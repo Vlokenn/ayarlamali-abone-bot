@@ -14,7 +14,7 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("online");
+  client.user.setStatus("idle");
   var oyun = [
        "Made With Vloken",
        "Made With Vloken"];
