@@ -4,7 +4,7 @@ const db = require('quick.db');
 exports.run = async (client, message, args) => {
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Bu komutu kullanmak için gerekli yetkin bulunmamakta.')
 const abonerol = db.fetch(`abonerol_${message.guild.id}`)
-// Bu js Vloken tarafından yapılmıştır.
+// Ğ
 const member = message.mentions.members.first()
 if(!member) return message.reply('Bir kişi etiketlemelisin.')
   let kod = "`"
