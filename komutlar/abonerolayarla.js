@@ -4,6 +4,7 @@ const db = require('quick.db');
 
 exports.run = async (client, message, args) => {
 const rol = message.mentions.roles.first()
+if(!rol) return message.reply('Bir rol etiketlemelisin!')
 db.set(`abonerol_${message.guild.id}`, rol.id)
   const emb = new Discord.MessageEmbed()
   .setAuthor(`Abone Rol`)
