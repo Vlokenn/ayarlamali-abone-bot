@@ -16,8 +16,8 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-       "Made With Vloken",
-       "Made With Vloken"];
+       "!yardım",
+       `${client.users.cache.size} Kullanıcıya Hizmet Ediyorum!`];
 
   setInterval(function() {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
