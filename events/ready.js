@@ -17,12 +17,13 @@ module.exports = client => {
   client.user.setStatus("idle");
   var oyun = [
        "!yardım",
+    ``
        `${client.users.cache.size} Kullanıcıya Hizmet Ediyorum!`];
 
   setInterval(function() {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
     client.user.setActivity(oyun[random], "");
-  }, 2 * 2500);
+  }, 2 * 1500);
 };
 
