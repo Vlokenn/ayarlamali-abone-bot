@@ -17,7 +17,7 @@ module.exports = client => {
   client.user.setStatus("idle");
   var oyun = [
        "!yardım",
-    ``
+    `Sponsor Olmak İçin: Vloken#1000`,
        `${client.users.cache.size} Kullanıcıya Hizmet Ediyorum!`];
 
   setInterval(function() {

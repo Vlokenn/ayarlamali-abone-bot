@@ -9,6 +9,7 @@ const member = message.mentions.members.first()
 if(!member) return message.reply('Bir kişi etiketlemelisin.')
   let kod = "`"
   if(!abonerol) return message.reply('Bir hata oluştu. \n Abone rolün ayarlandığından emin olun.')
+    message.react("✅")
 message.channel.send(`${member} adlı kullanıcısının abone rolü ${kod}${message.author.tag}${kod} isimli yetkili tarafından alındı!`)
 member.roles.remove(abonerol)
 }

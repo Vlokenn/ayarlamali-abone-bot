@@ -11,6 +11,7 @@ if(!member) return message.reply('Bir kişi etiketlemelisin.')
   if(!abonerol) return message.reply('Bir hata oluştu. \n Abone rolün ayarlandığından emin olun.')
 message.channel.send(`${member} isimli kullanıcıya ${kod}${message.author.tag}${kod} isimli yetkili tarafından abone rolü verildi.`)
 member.roles.add(abonerol)
+    message.react("✅")
 }
 
 exports.conf = {

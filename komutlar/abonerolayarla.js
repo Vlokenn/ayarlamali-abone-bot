@@ -10,6 +10,7 @@ db.set(`abonerol_${message.guild.id}`, rol.id)
   const emb = new Discord.MessageEmbed()
   .setAuthor(`Abone Rol`)
   .setDescription(`Abone Rol Başarıyla ${rol} Olarak Ayarlandı!`)
+    message.react("✅")
   message.reply(emb)
         }
 

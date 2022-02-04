@@ -9,6 +9,7 @@ db.delete(`abonerol_${message.guild.id}`)
   .setAuthor(`Abone Rol`)
   .setDescription(`Abone Rol Başarıyla Sıfırlandı! `)
   message.reply(emb)
+    message.react("✅")
         }
 
 
