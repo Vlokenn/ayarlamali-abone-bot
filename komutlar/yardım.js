@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 exports.run = async (client, message, args) => {
-  let Ğ = new Discord.MessageEmbed()
+  let embed = new Discord.MessageEmbed()
   .setAuthor(message.author.tag, message.author.displayAvatarURL({dynamic: true}))
   .setDescription(`
   <:YouTube:939113214409601066> !abonerolayarla <rol> -> Abone rolünü belirlersiniz.
@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
   `)
   .setFooter(`${message.author.username} tarafından istendi.`)
   .setTimestamp()
-  message.channel.send(Ğ)
+  message.channel.send(embed)
         }
 
 
