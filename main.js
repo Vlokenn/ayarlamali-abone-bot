@@ -124,9 +124,6 @@ client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.on("ready", () => {
-  client.channels.cache.get('913121161112608902').join();
-  });
 
 
 client.login(process.env.token)
